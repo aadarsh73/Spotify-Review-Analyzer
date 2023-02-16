@@ -1,6 +1,7 @@
 #streamlit app to input sentence and output the sentiment
 import streamlit as st
 import numpy as np
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 import tensorflow as tf
 from tensorflow import keras 
@@ -9,7 +10,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from nltk.stem import PorterStemmer
 import re
 import nltk
-nltk.download('stopwords')
+
 st.set_page_config(page_title="Spotify Review Analyser", page_icon="🎵", layout="wide", initial_sidebar_state="auto", menu_items=None)
 import pandas as pd
 
